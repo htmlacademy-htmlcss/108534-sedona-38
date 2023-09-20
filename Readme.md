@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Valentina Klimenko](https://up.htmlacademy.ru/htmlcss/38/user/108534).
-* Наставник: `Александр Зиновьев`.
+* Наставник: `Александр Зиновьев`(https://htmlacademy.ru/profile/id198751).
 
 ---
 
