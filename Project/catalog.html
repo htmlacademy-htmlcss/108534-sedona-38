@@ -7,8 +7,8 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class=logo  href="https://htmlacademy.ru/" aria-current="page">
-          <img src="#" alt="логотип">
+        <a class="logo"  href="https://htmlacademy.ru/" aria-current="page">
+          <img src="images/logo.svg" width="140" height="70" alt="логотип">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -45,17 +45,17 @@
       <h1 class="page-catalog-title">Гостиницы Седоны </h1>
       <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class=breadcrumbs-link  href="index.html" aria-current="page"></a>
+          <a class="breadcrumbs-link"  href="index.html" aria-current="page"></a>
             <img src="#" alt="домик">
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Гостиницы</a>  
+          <a class="breadcrumbs-link">Гостиницы</a>
         </li>
       </ol>
     </div>
     <section class="catalog-products">
       <h2 class="visually-hidden">выбор гостиницы</h2>
-      <form class="catalog-filter" action="https://exo.htmlacademy.ru" metod="get"></class>
+      <form class="catalog-filter" action="https://exo.htmlacademy.ru" metod="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
@@ -104,10 +104,10 @@
         </fieldset>
         <Fieldset class="catalog-filter-group">
           <Legend class="catalog-filter-price">Стоимость Р</Legend>
-            <label class="form-label" for="fixed-price"> 
+            <label class="form-label" for="fixed-price">
               <input class="control-input" type="text" name="от" placeholder="0">
               <span class="letter">от</span>
-            </label> 
+            </label>
             <label class="form-label" for="fixed-price">
               <input class="control-input" type="text" name="до" placeholder="9000">
               <span class="letter">до</span>
@@ -121,7 +121,7 @@
       <h1 class="visually-hidden">Сортировка</h1>
       <h2 class="selection">Найдено гостиниц:</h2>
       <b class="selection">38</b>
-      <select class="select-control" aria-label="Сортировка">  
+      <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвое</option>
         <option value="expensive">Сначала дорогое</option>
         <option value="popular">Сначала популярное</option>
@@ -139,11 +139,11 @@
       <ul class="catalog-list">
         <li class="catalog-card-item">
           <a class="catalog-card-link" href="catalog.html">
-            <img class="catalog-card-image" src="#" alt="вид на звездное небо">
-            <h3 class="catalog-card-title">Amara Resort & Spa</h3>
+            <img class="catalog-card-image" src="images/hotel-1.jpg" width="300" height="212" alt="вид на звездное небо">
+            <h3 class="catalog-card-title">Amara Resort&Spa</h3>
           </a>
           <p>
-            <span class="catalog-card">Гостиница</span> 
+            <span class="catalog-card">Гостиница</span>
             <b class="catalog-card-price">от 4000 P</b>
           </p>
           <a class="catalog-card-button button" href="#">Подробнее</a>
@@ -154,10 +154,10 @@
         </li>
         <li class="catalog-card-item">
           <a class="catalog-card-link" href="catalog.html">
-            <img class="catalog-card-image" src="#" alt="радуга-тучи-горы">
+            <img class="catalog-card-image" src="images/hotel-2.jpg" width="300" height="212" alt="радуга-тучи-горы">
             <h3 class="catalog-card-title">Villas at Poco Diablo</h3>
           </a>
-          <span class="catalog-card">Гостиница</span> 
+          <span class="catalog-card">Гостиница</span>
           <b class="catalog-card-price">от 5000<s>P</s></b>
           <a class="catalog-card-button button" href="#">Подробнее</a>
           <a class="catalog-card-button button" href="#">В избранном</a>
@@ -167,10 +167,10 @@
         </li>
         <li class="catalog-card-item">
           <a class="catalog-card-link" href="catalog.html">
-            <img class="catalog-card-image" src="#" alt="солнечное небо-горы">
+            <img class="catalog-card-image" src="images/hotel-3.jpg" width="300" height="212" alt="солнечное небо-горы">
             <h3 class="catalog-card-title">Desert Quail Inn</h3>
           </a>
-          <span class="catalog-card">Гостиница</span> 
+          <span class="catalog-card">Гостиница</span>
           <b class="catalog-card-price">от 2500<s>P</s></b>
           <a class="catalog-card-button button" href="#">Подробнее</a>
           <a class="catalog-card-button button" href="#">В избранное</a>
@@ -180,18 +180,18 @@
         </li>
         <li class="catalog-card-item">
           <a class="catalog-card-link" href="catalog.html">
-            <img class="catalog-card-image" src="#" alt="ночное небо-горы">
+            <img class="catalog-card-image" src="images/hotel-4.jpg" width="300" height="212" alt="ночное небо-горы">
             <h3 class="catalog-card-title">GreenTree Inn</h3>
           </a>
-          <span class="catalog-card">Гостиница</span> 
+          <span class="catalog-card">Гостиница</span>
           <b class="catalog-card-price">от 1500<s>P</s></b>
           <a class="catalog-card-button button" href="#">Подробнее</a>
           <a class="catalog-card-button button" href="#">В избранное</a>
           <div class="star star-2" role="img" aria-label="2-star"></div>
           <span class="catalog-card">Рейтинг</span>
           <b class="catalog-card">5,0</b>
-        </li>  
-      </ul>  
+        </li>
+      </ul>
         <footer>
           <h1 class="visually-hidden">pagination </h1>
           <ol class="pagination-title">
@@ -230,7 +230,6 @@
         <button class="button" type="submit">Подписаться</button>
       </form>
     </article>
-    < class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Соцсети</h2>
         <ul class="social-list">
@@ -251,7 +250,7 @@
       </section>
       <section>
         <h2 class="visually-hidden">партнеры</h2>
-        <a class=logo  href="https://htmlacademy.ru/" aria-current="page">
+        <a class="logo"  href="https://htmlacademy.ru/" aria-current="page">
         <img class="footer-contacts-logo" src="#" alt="htmlacademy">
         </a>
       </section>
