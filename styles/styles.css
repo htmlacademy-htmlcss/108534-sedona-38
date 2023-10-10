@@ -184,3 +184,9 @@ body{
   text-align: center;
   color: #333333;
 }
+.subscription-index{                           /*фон для подписки*/
+  background-color: #82b3d3;
+  background-image: url("../images/subscription-index.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
