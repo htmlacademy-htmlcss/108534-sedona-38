@@ -1,1 +1,186 @@
+@font-face {
+  font-family:"PT sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/pt-sans-regular.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family:"PTsans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/pt-sans-bold.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family:"PT sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/pt-sans-italic.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family:"PT sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(../fonts/pt-sans-bold-italic.woff2) format("woff2");
+  font-display: swap;
+}
 
+body{
+  font-family: "PT sans",sans-serif;/* базовый текстовый шрифт и цвет фона*/
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.button {                             /*общие параметры для кнопки*/
+  font-family: inherit;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.page-header{
+  color: #000000;
+}
+.navigation-link{                    /*меню-навигация*/
+  font-family: "PT sans" sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight:700;
+  text-align: center;
+  color: #000000;
+  background-color:#FFFFFF;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.hero-screen{                    /*фон главного экрана*/
+  background-color: #82b3d3;
+  background-image: url("../images/index-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.title-causes{                       /*заголовок преимуществ*/
+  font-family: "PT sans" sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight:700;
+  text-align: center;
+  color: #000000;
+  background-color:#FFFFFF;
+  text-transform: uppercase;
+}
+.causes{                             /*подзаголовок преимуществ*/
+  font-family: "PT sans" sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  background-color:#FFFFFF;
+}
+.advantages-item{                   /*преимущества фон*/
+  text-align: center;
+  background-color:#82b3d3;
+}
+.advantages-nested:nth-child(odd){
+  background-color: #f6f0f6;
+}
+.advantages-nested:nth-child(even){
+  background-color: #f0f6fa;
+}
+.advantages-title{                    /*заголовок преимуществ*/
+  font-family: "PT sans" sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages-description{                    /*текст преимуществ*/
+  font-family: "PT sans" sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+.title-tagline{                   /*заголовок предложений*/
+  font-family: "PT sans" sans-serif;
+  line-height: 30px;
+  font-weight:700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background-color:#FFFFFF;
+}
+.tagline{                            /*подзаголовок предложений*/
+  font-family: "PT sans" sans-serif;
+  text-align: center;
+  color: #333333;
+  background-color:#FFFFFF;
+}
+.offers-item:nth-child(odd){           /*фон предложений*/
+  background-color: rgba(131,179,211,0.12);
+}
+.offers-title{                         /*заголовок карточек предложений*/
+  font-family: "PT sans" sans-serif;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.offers-description{                     /*текст предложений*/
+  font-family: "PT sans" sans-serif;
+  text-align: center;
+  color: #333333;
+}
+.search-title{                  /*заголовок поиска гостинницы*/
+  font-family: "PT Sans",sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.search-description{              /*укажите дату поездки*/
+  font-family: "PT Sans",sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  line-height: 26px;
+  color: #333333;
+}
+.subscription-title{                      /*заголовок подписки*/
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.subscription-description{                      /*только полезная информация...*/
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
