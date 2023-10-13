@@ -2,11 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <link rel="icon" type="images/svg+xml" sizes="32*32" href="images/favicon.svg">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Каталог</title>
   </head>
   <body>
+    <div class="page-container">
     <header class="page-header">
       <nav class="navigation">
         <a class="logo"  href="https://htmlacademy.ru/" aria-current="page">
@@ -26,7 +28,6 @@
         <ul class="navigation-list" navigation="user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <img src="images/search.svg" width="20" height="20" alt="поиск">
               <span class="visually-hidden">
                 Поиск
               </span>
@@ -34,7 +35,6 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <img src="images/heart.svg" width="20" height="20" alt="избранное">
               <span class="visually-hidden">
                 Избранное
               </span>
@@ -45,8 +45,9 @@
       </nav>
     </header>
     <main class="main-inner">
-    <div>
-      <h1 class="page-catalog-title">Гостиницы Седоны </h1>
+    <section class="catalog-products">
+      <div>
+      <h1 class="catalog-title">Гостиницы Седоны </h1>
       <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link"  href="index.html" aria-current="page"></a>
@@ -56,8 +57,7 @@
           <a class="breadcrumbs-link">Гостиницы</a>
         </li>
       </ol>
-    </div>
-    <section class="catalog-products">
+      </div>
       <h2 class="visually-hidden">выбор гостиницы</h2>
       <form class="catalog-filter" action="https://exo.htmlacademy.ru" metod="get">
         <fieldset class="catalog-filter-group">
@@ -106,8 +106,8 @@
             </li>
           </ul>
         </fieldset>
-        <Fieldset class="catalog-filter-group">
-          <Legend class="catalog-filter-price">Стоимость Р</Legend>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-price">Стоимость Р</legend>
             <label class="form-label" for="fixed-price">
               <input class="control-input" type="text" name="от" placeholder="0">
               <span class="letter">от</span>
@@ -116,7 +116,7 @@
               <input class="control-input" type="text" name="до" placeholder="9000">
               <span class="letter">до</span>
             </label>
-        </Fieldset>
+        </fieldset>
         <button class="button" type="button">применить</button>
         <button class="button" type="text">сбросить</button>
       </form>
@@ -164,8 +164,10 @@
             <img class="catalog-card-image" src="images/hotel-2.jpg" width="300" height="212" alt="радуга-тучи-горы">
             <h3 class="catalog-card-title">Villas at Poco Diablo</h3>
           </a>
+          <p>
           <span class="catalog-card">Гостиница</span>
           <b class="catalog-card-price">от 5000<s>P</s></b>
+          </p>
           <a class="catalog-card-button button" href="#">Подробнее</a>
           <a class="catalog-card-button button" href="#">В избранном</a>
           <div class="star star-4" role="img" aria-label="4-star"></div>
@@ -177,8 +179,10 @@
             <img class="catalog-card-image" src="images/hotel-3.jpg" width="300" height="212" alt="солнечное небо-горы">
             <h3 class="catalog-card-title">Desert Quail Inn</h3>
           </a>
+          <p>
           <span class="catalog-card">Гостиница</span>
           <b class="catalog-card-price">от 2500<s>P</s></b>
+          </p>
           <a class="catalog-card-button button" href="#">Подробнее</a>
           <a class="catalog-card-button button" href="#">В избранное</a>
           <div class="star star-3" role="img" aria-label="3-star"></div>
@@ -190,8 +194,10 @@
             <img class="catalog-card-image" src="images/hotel-4.jpg" width="300" height="212" alt="ночное небо-горы">
             <h3 class="catalog-card-title">GreenTree Inn</h3>
           </a>
+          <p>
           <span class="catalog-card">Гостиница</span>
           <b class="catalog-card-price">от 1500<s>P</s></b>
+          </p>
           <a class="catalog-card-button button" href="#">Подробнее</a>
           <a class="catalog-card-button button" href="#">В избранное</a>
           <div class="star star-2" role="img" aria-label="2-star"></div>
@@ -202,7 +208,7 @@
         <footer>
           <h1 class="visually-hidden">pagination </h1>
           <ol class="pagination-title">
-            <li class="pagination-item">
+            <li class="pagination-item-current ">
               <a class="pagination-link pagination-current">1</a>
             </li>
             <li class="pagination-item">
@@ -216,7 +222,7 @@
             </li>
             <li class="pagination-item">
               <a class="pagination-link pagination-next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
+                <span class="visually-hidden">...</span>
               </a>
             </li>
             <li class="pagination-item">
@@ -241,19 +247,13 @@
         <h2 class="visually-hidden">Соцсети</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-network" href="https://vk.com/htmlacademy">В контакте
-              <img src="images/vk.svg" width="24" height="14" alt="icons">
-            </a>
+            <a class="social-network" href="https://vk.com/htmlacademy">В контакте</a>
           </li>
           <li class="social-item">
-            <a class="social-network" href="https://t.me/htmlacademy">Телеграм
-              <img src="images/telegram.svg" width="18" height="16" alt="icons">
-            </a>
+            <a class="social-network" href="https://t.me/htmlacademy">Телеграм</a>
           </li>
           <li class="social-item">
-            <a class="social-network" href="https://www.yotobe.com/user/htmlacademy">Ютуб
-              <img src="images/youtube.svg" width="22" height="17" alt="icons">
-            </a>
+            <a class="social-network" href="https://www.yotobe.com/user/htmlacademy">Ютуб</a>
           </li>
         </ul>
       </section>
@@ -267,5 +267,6 @@
         <img class="footer-contacts-logo" src="images/html-academy.svg" width="115" height="33" alt="htmlacademy">
         </a>
       </section>
+      </div>
   </body>
 </html>
