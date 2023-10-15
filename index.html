@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" type="images/svg+xml" sizes="32*32" href="images/favicon.svg">
+    <link rel="icon" type="images/svg+xml" href="images/favicon.svg">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -25,7 +25,7 @@
             <a class="navigation-link" href="catalog.html">Гостинницы</a>
           </li>
         </ul>
-        <ul class="navigation-list" navigation="user">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
@@ -41,7 +41,7 @@
             </a>
           </li>
         </ul>
-        <div>
+        <div class="button-navigation">
           <a class="button button-all" href="#">Хочу сюда</a>
         </div>
         </nav>
@@ -61,8 +61,8 @@
             <h3 class="advantages-title">настоящий городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="images/photo-1.jpg" width="800" height="385" alt="фотография города">
-          </li>
-        <ul>
+
+        <ul class="advantages-list">
           <li class="advantages-nested">
             <h3 class="advantages-title">Небольшая площадь</h3>
             <p class="advantages-description">Все достопримечательности находятся близко </p>
@@ -76,6 +76,7 @@
             <p class="advantages-description">Большинство едет в Гранд-Каньон и толпится там</p>
           </li>
         </ul>
+          </li>
           <li class="advantages-item">
             <img src="images/photo-2.jpg" width="800" height="385" alt="фотография каньона">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
@@ -116,7 +117,7 @@
         <label for="appointment-email" class="visually-hidden">
           Ваш имейл
         </label>
-        <input type="emaill" id="appointment-email" name="appointment-email" placeholder="email" required="email">
+        <input type="email" id="appointment-email" name="appointment-email" placeholder="email" required="required">
         <button class="button" type="submit">Подписаться</button>
       </form>
     </article>

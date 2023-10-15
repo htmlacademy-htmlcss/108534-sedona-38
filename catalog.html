@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="images/svg+xml" sizes="32*32" href="images/favicon.svg">
+    <link rel="icon" type="images/svg+xml" href="images/favicon.svg">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Каталог</title>
   </head>
@@ -25,7 +25,7 @@
             <a class="navigation-link" href="catalog.html">Гостинницы</a>
           </li>
         </ul>
-        <ul class="navigation-list" navigation="user">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
@@ -59,7 +59,7 @@
       </ol>
       </div>
       <h2 class="visually-hidden">выбор гостиницы</h2>
-      <form class="catalog-filter" action="https://exo.htmlacademy.ru" metod="get">
+      <form class="catalog-filter" action="https://exo.htmlacademy.ru">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
@@ -108,17 +108,17 @@
         </fieldset>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-price">Стоимость Р</legend>
-            <label class="form-label" for="fixed-price">
-              <input class="control-input" type="text" name="от" placeholder="0">
+            <label class="form-label" for="minimum-price">
+              <input class="control-input" id="minimum-price" type="text" name="от" placeholder="0">
               <span class="letter">от</span>
             </label>
             <label class="form-label" for="fixed-price">
-              <input class="control-input" type="text" name="до" placeholder="9000">
+              <input class="control-input" id="fixed-price" type="text" name="до" placeholder="9000">
               <span class="letter">до</span>
             </label>
         </fieldset>
         <button class="button" type="button">применить</button>
-        <button class="button" type="text">сбросить</button>
+        <button class="button" type="button">сбросить</button>
       </form>
     </section>
     <section>
@@ -239,7 +239,7 @@
         <label for="appointment-email" class="visually-hidden">
           Ваш имейл
         </label>
-        <input type="emaill" id="appointment-email" name="appointment-email" placeholder="email">
+        <input type="text" id="appointment-email" name="appointment-email" placeholder="email" required="required">
         <button class="button" type="submit">Подписаться</button>
       </form>
     </article>
