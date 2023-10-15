@@ -103,7 +103,7 @@ ol{
   background-color: #e6f0f6;
 }
 
-.advantages-title{                    /*заголовок в карточках преимуществ*/
+.advantages-title-nested{                    /*заголовок в карточках преимуществ*/
   font-size: 24px;
   font-style: normal;
   line-height: 28px;
@@ -113,9 +113,30 @@ ol{
   text-transform: uppercase;
 }
 
-.advantages-description{                    /*текст в карточках преимуществ*/
+.advantages-title-item{
+  font-size: 24px;
+  font-style: normal;
+  line-height: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-description-nested{                    /*текст в карточках преимуществ*/
   color: #333333;
   text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.advantages-description-item{
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
 .title-tagline{                   /*заголовок предложений*/
