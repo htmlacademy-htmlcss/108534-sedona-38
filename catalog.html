@@ -8,7 +8,7 @@
     <title>Каталог</title>
   </head>
   <body>
-    <div class="page-container">
+    <div class="page-container content">
     <header class="page-header">
       <nav class="navigation">
         <a class="logo"  href="https://htmlacademy.ru/" aria-current="page">
@@ -25,8 +25,9 @@
             <a class="navigation-link" href="catalog.html">Гостинницы</a>
           </li>
         </ul>
+        <div class="navigation-actions">
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
+          <li class="navigation-user-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
                 Поиск
@@ -41,10 +42,11 @@
             </a>
           </li>
         </ul>
-        <a class="button button-all" href="#">Хочу сюда</a>
+          <a class="button button-all header-button" href="#">Хочу сюда</a>
+        </div>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-container main-inner">
     <section class="catalog-products">
       <div>
       <h1 class="catalog-title">Гостиницы Седоны </h1>
@@ -122,6 +124,7 @@
       </form>
     </section>
     <section>
+      <div class="select-group">
       <h1 class="visually-hidden">Сортировка</h1>
       <h2 class="selection">Найдено гостиниц:</h2>
       <b class="selection">38</b>
@@ -139,6 +142,8 @@
       <a class="button" href="#">
         <span class="visually-hidden">Показать список</span>
       </a>
+      </div>
+      
       <h1 class="visually-hidden">Catalog</h1>
       <ul class="catalog-list">
         <li class="catalog-card-item">
@@ -240,7 +245,10 @@
         <button class="button" type="submit">Подписаться</button>
       </form>
     </article>
-      <section class="footer-social">
+    </div>
+    <div class="page-container">
+      <footer class="page-footer">
+        <section class="footer-social">
         <h2 class="visually-hidden">Соцсети</h2>
         <ul class="social-list">
           <li class="social-item">
@@ -253,17 +261,18 @@
             <a class="social-network" href="https://www.yotobe.com/user/htmlacademy">Ютуб</a>
           </li>
         </ul>
-      </section>
-      <section class="footer-contacts">
+        </section>
+        <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="footer-contacts-phone" href="tel:+78128121212">+7 812 812 12 12</a>
-      </section>
-      <section>
+        <a class="contacts-phone" href="tel:+78128121212">+7 812 812 12 12</a>
+        </section>
+        <section class="footer-partners">
         <h2 class="visually-hidden">партнеры</h2>
         <a class="logo"  href="https://htmlacademy.ru/" aria-current="page">
         <img class="footer-contacts-logo" src="images/html-academy.svg" width="115" height="33" alt="htmlacademy">
         </a>
-      </section>
-      </div>
+        </section>
+      </footer>
+    </div>
   </body>
 </html>
