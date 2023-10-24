@@ -23,7 +23,7 @@ html{
 
 body{
   margin: 0;
-  font-family: "pt sans",sans-serif;            /*базовый текстовый шрифт и цвет фона*/
+  font-family: "pt sans",sans-serif;       
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -55,7 +55,7 @@ body{
   flex-grow: 1;
 }
 
-.button {                             /*общие параметры для кнопки*/
+.button {
   font-size: 20px;
   font-style: normal;
   line-height: 36px;
@@ -125,7 +125,7 @@ body{
 }
 
 
-.navigation-link{                    /*меню-навигация*/
+.navigation-link{
   font-size: 20px;
   line-height: 24px;
   font-weight:700;
@@ -164,7 +164,7 @@ body{
   margin: 0;
 }
 
-.title-causes{                       /*заголовок преимуществ*/
+.title-causes{
   font-size: 30px;
   line-height: 36px;
   font-style: normal;
@@ -175,7 +175,7 @@ body{
   margin: 0;
 }
 
-.causes{                             /*подзаголовок преимуществ*/
+.causes{
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -191,7 +191,7 @@ body{
   list-style-type: none;
 }
 
-.advantages-item{                   /*преимущества фон*/
+.advantages-item{
   text-align: center;
   background-color:#82b3d3;
 }
@@ -232,7 +232,7 @@ body{
   margin-bottom: auto;
 }
 
-.advantages-title-nested{                    /*заголовок в карточках преимуществ*/
+.advantages-title-nested{
   font-size: 24px;
   font-style: normal;
   line-height: 28px;
@@ -254,7 +254,7 @@ body{
   margin: 0 0 60px;
 }
 
-.advantages-description-nested{                    /*текст в карточках преимуществ*/
+.advantages-description-nested{
   color: #333333;
   text-align: center;
   font-size: 18px;
@@ -276,7 +276,7 @@ body{
   padding: 64px 70px;
 }
 
-.title-tagline{                   /*заголовок предложений*/
+.title-tagline{
   line-height: 30px;
   font-weight:700;
   text-align: center;
@@ -286,14 +286,14 @@ body{
 }
 
 .tagline{
-  font-size: 22px;                            /*подзаголовок предложений*/
+  font-size: 22px;
   text-align: center;
   line-height: 26px;
   color: #333333;
   margin: 20px 0 0;
 }
 
-.offers-item:nth-child(odd){           /*фон предложений*/
+.offers-item:nth-child(odd){
   background-color: rgba(131,179,211,0.12);
 }
 
@@ -311,7 +311,7 @@ body{
   padding: 80px 85px;
 }
 
-.offers-title{                         /*заголовок карточек предложений*/
+.offers-title{
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -321,7 +321,7 @@ body{
   margin: 30px 0;
 }
 
-.offers-description{                     /*текст предложений*/
+.offers-description{
   text-align: center;
   color: #333333;
   margin: 0;
@@ -332,7 +332,7 @@ text-align: center;
 padding: 96px 70px;
 }
 
-.search-title{                  /*заголовок поиска гостинницы*/
+.search-title{
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -342,7 +342,7 @@ padding: 96px 70px;
   margin: 0 0 20px;
 }
 
-.search-description{              /*укажите дату поездки*/
+.search-description{
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -360,25 +360,9 @@ padding: 96px 70px;
   text-align: center;
 }
 
-.subscription-title{                         /*заголовок подписки общий*/
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  color:#000000;
-}
 
-.subscription-description{                     /*только полезная информация... */
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  color: #333333;
-}
 
-.subscription-theme-custom{                          /*фон для подписки*/
+.subscription-theme-custom{
   background-color: #82b3d3;
   color: #ffffff;
   background-image: url("../images/subscription-index.jpg");
@@ -397,7 +381,7 @@ padding: 96px 70px;
   margin: 0 0 20px;
 }
 
-.subscription-description-custom{          /*только полезная информация...*/
+.subscription-description-custom{
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -440,7 +424,7 @@ padding: 96px 70px;
   align-items: center;
 }
 
-.contacts-phone{                        /*футер телефон*/
+.contacts-phone{
   color: #000000;
   font-size: 40px;
   font-weight: 400;
@@ -451,14 +435,14 @@ padding: 96px 70px;
 
 }
 
-.main-inner{                                /*страница каталога*/
+.main-inner{
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   margin: 0;
 }
 
-.catalog-products{                         /*фон для фильтра*/
+.catalog-products{
   background-color: #82b3d3;
   background-image: url("../images/filter-catalog.jpg");
   background-size: cover;
@@ -482,6 +466,7 @@ padding: 96px 70px;
   padding: 0;
   list-style-type: none;
   margin: 0 0 40px;
+  align-items:center;
 }
 
 .breadcrumbs-link-start::before{
@@ -528,6 +513,14 @@ padding: 96px 70px;
   display: flex;
   justify-content: space-between;
   padding: 70px;
+}
+
+.selection-title{
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .catalog-list{
@@ -582,4 +575,24 @@ padding: 96px 70px;
 
 .pagination-current{
   color: #333333;
+}
+
+.subscription-title{
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color:#000000;
+  margin: 0 0 20px;
+}
+
+.subscription-description{
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #333333;
+  margin: 0 0 54px;
 }
