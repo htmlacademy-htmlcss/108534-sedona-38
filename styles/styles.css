@@ -23,7 +23,7 @@ html{
 
 body{
   margin: 0;
-  font-family: "pt sans",sans-serif;            /*базовый текстовый шрифт и цвет фона*/
+  font-family: "pt sans",sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -55,7 +55,7 @@ body{
   flex-grow: 1;
 }
 
-.button {                             /*общие параметры для кнопки*/
+.button {
   font-size: 20px;
   font-style: normal;
   line-height: 36px;
@@ -77,7 +77,7 @@ body{
   text-align: center;
   text-transform: uppercase;
   background-color: #756157;
-  width: 160px;
+  min-width: 160px;
   padding-top: 8px;
   padding-bottom: 8px;
   margin-left: 20px;
@@ -88,9 +88,6 @@ body{
   display: flex;
   align-items: center;
 }
-
-
-
 
 .page-header{
   color: #000000;
@@ -108,10 +105,15 @@ body{
   padding: 0;
   display: flex;
   align-items: center;
+  list-style-type: none;
 }
 
 .navigation-item{
-  padding: 0 16px;
+  padding: 20px 16px;
+}
+
+.navigation-user{
+  list-style-type: none;
 }
 
 .navigation-user-item{
@@ -119,11 +121,12 @@ body{
 }
 
 .navigation-logo{
+  display: block;
   margin-right: 30px;
 }
 
 
-.navigation-link{                    /*меню-навигация*/
+.navigation-link{
   font-size: 20px;
   line-height: 24px;
   font-weight:700;
@@ -137,14 +140,24 @@ body{
   flex-grow: 1;
 }
 
-.hero-screen{                    /*фон главного экрана*/
+.hero-screen{
+  color: #ffffff;
   background-color: #82b3d3;
   background-image: url("../images/index-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 51px;
-  padding-bottom: 82px;
+  padding: 51px 70px 82px;
   margin: 0;
+  position: relative;
+}
+
+.hero-screen::after{
+  content: url("../images/divider.svg");
+  width: 1200px;
+  height: 57px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .hero-image{
@@ -152,40 +165,39 @@ body{
   margin: 0 auto;
 }
 
-.title-causes{                       /*заголовок преимуществ*/
+.advantages-causes{
+  padding: 70px;
+  margin: 0;
+}
+
+.title-causes{
   font-size: 30px;
   line-height: 36px;
+  font-style: normal;
   font-weight:700;
   text-align: center;
   color: #000000;
-  background-color:#FFFFFF;
   text-transform: uppercase;
+  margin: 0 0 25px;
 }
 
-.causes{                             /*подзаголовок преимуществ*/
+.causes{
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   text-align: center;
   color: #333333;
-  background-color:#FFFFFF;
-}
-
-ul{
-  list-style-type: none;
-}
-
-ol{
-  list-style-type: none;
+  background-color:#ffffff;
+  margin: 0;
 }
 
 .advantages-list{
   margin: 0;
   padding: 0;
-
+  list-style-type: none;
 }
 
-.advantages-item{                   /*преимущества фон*/
+.advantages-item{
   text-align: center;
   background-color:#82b3d3;
 }
@@ -198,69 +210,81 @@ ol{
   background-color: #e6f0f6;
 }
 
+.advantages-item-page{
+  display: flex;
+}
+
+.advantages-page{
+  width: 400px;
+  padding: 103px 85px;
+}
+
+.advantages-list-nested{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .advantages-nested{
   width: 400px;
   min-height: 385px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   padding: 103px 85px;
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.advantages-title-nested{                    /*заголовок в карточках преимуществ*/
+.advantages-title-nested{
+  color: #000000;
+  margin: 0 0 60px;
+}
+
+.title-item{
   font-size: 24px;
   font-style: normal;
   line-height: 28px;
   font-weight: 700;
-  color: #000000;
   text-align: center;
   text-transform: uppercase;
 }
 
 .advantages-title-item{
-  font-size: 24px;
-  font-style: normal;
-  line-height: 28px;
-  font-weight: 700;
   color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
+  margin: 0 0 60px;
 }
 
-.advantages-description-nested{                    /*текст в карточках преимуществ*/
-  color: #333333;
-  text-align: center;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
+.advantages-description-nested{
+  margin: 0;
 }
 
 .advantages-description-item{
   color: #ffffff;
-  text-align: center;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
+  margin: 0;
 }
 
-.title-tagline{                   /*заголовок предложений*/
+.tagline-page{
+  padding: 64px 70px;
+}
+
+.title-tagline{
   line-height: 30px;
-  font-weight:700;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
 }
 
 .tagline{
-  font-size: 22px;                            /*подзаголовок предложений*/
+  font-size: 22px;
   text-align: center;
   line-height: 26px;
   color: #333333;
+  margin: 20px 0 0;
 }
 
-.offers-item:nth-child(odd){           /*фон предложений*/
+.offers-item:nth-child(odd){
   background-color: rgba(131,179,211,0.12);
 }
 
@@ -269,46 +293,52 @@ ol{
   padding: 0;
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
 }
 
 .offers-item{
   width: 400px;
   min-height: 385px;
+  padding: 80px 85px;
 }
 
-.offers-title{                         /*заголовок карточек предложений*/
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
+.offers-title{
   color: #000000;
+  margin: 0 0 30px;
 }
 
-.offers-description{                     /*текст предложений*/
+.offers-description{
   text-align: center;
   color: #333333;
+  margin: 0;
 }
 
 .search{
 text-align: center;
+padding: 96px 70px;
 }
 
-.search-title{                  /*заголовок поиска гостинницы*/
+.search-title{
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0 0 20px;
 }
 
-.search-description{              /*укажите дату поездки*/
-  font-family: "pt Sans",sans-serif;
+.search-description{
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   color: #333333;
+  margin: 0 0 54px;
+}
+
+.button-all-search{
+  background-color:#756157;
+  padding: 8px 50px;
 }
 
 .subscription{
@@ -316,7 +346,7 @@ text-align: center;
   text-align: center;
 }
 
-.subscription-title{                         /*заголовок подписки общий*/
+.subscription-title{
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -324,38 +354,32 @@ text-align: center;
   text-align: center;
   text-transform: uppercase;
   color:#000000;
+  margin: 0 0 20px;
 }
 
-.subscription-description{                     /*только полезная информация... */
+.subscription-description{
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
   color: #333333;
+  margin: 0 0 54px;
 }
 
-.subscription-theme-custom{                          /*фон для подписки*/
+.subscription-theme-custom{
   background-color: #82b3d3;
   color: #ffffff;
   background-image: url("../images/subscription-index.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 96px 70px 104px;
 }
 
 .subscription-title-custom{
   color: #ffffff;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
 }
 
-.subscription-description-custom{          /*только полезная информация...*/
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
+.subscription-description-custom{
   color: #ffffff;
 }
 
@@ -364,18 +388,21 @@ text-align: center;
   display:flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 40px 70px 30px;
+  align-items:center;
 }
 
 .footer-contacts-logo{
   background-image: url("../images/html-academy.svg");
   width: 115px;
-  height: 33;
+  height: 33px;
 }
 
 .social-list{
   display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .social-network{
@@ -390,7 +417,7 @@ text-align: center;
   align-items: center;
 }
 
-.contacts-phone{                        /*футер телефон*/
+.contacts-phone{
   color: #000000;
   font-size: 40px;
   font-weight: 400;
@@ -401,13 +428,14 @@ text-align: center;
 
 }
 
-.main-inner{                                /*страница каталога*/
+.main-inner{
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin: 0;
 }
 
-.catalog-products{                         /*фон для фильтра*/
+.catalog-products{
   background-color: #82b3d3;
   background-image: url("../images/filter-catalog.jpg");
   background-size: cover;
@@ -427,18 +455,65 @@ text-align: center;
 }
 
 .breadcrumbs{
-
   display: flex;
   padding: 0;
+  list-style-type: none;
+  margin: 0 0 40px;
+  align-items:center;
 }
 
-.select-group{
-  display: flex;
-  padding: 70px;
+.breadcrumbs-link-start::before{
+  content:url("../images/home.svg")
+}
+
+.catalog-filter-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-filter{
   display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-group{
+  border:0;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-title{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin: 0 0 32px;
+}
+
+.catalog-filter-item{
+  margin: 0 0 16px;
+}
+
+.button-filter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.select-group{
+  display: flex;
+  justify-content: space-between;
+  padding: 70px;
+}
+
+.selection-title{
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .catalog-list{
@@ -447,6 +522,7 @@ text-align: center;
   flex-wrap: wrap;
   margin: 0;
   padding: 70px;
+  list-style-type: none;
 }
 
 .catalog-card-item{
@@ -468,6 +544,7 @@ text-align: center;
 .pagination-title{
   display: flex;
   padding: 70px;
+  list-style-type: none;
 }
 
 .pagination-link{

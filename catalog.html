@@ -11,7 +11,7 @@
     <div class="page-container content">
     <header class="page-header">
       <nav class="navigation">
-        <a class="logo"  href="https://htmlacademy.ru/" aria-current="page">
+        <a class="logo"  href="index.html" aria-current="page">
           <img src="images/logo.svg" width="140" height="70" alt="логотип">
         </a>
         <ul class="navigation-list">
@@ -52,8 +52,7 @@
       <h1 class="catalog-title">Гостиницы Седоны </h1>
       <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link"  href="index.html" aria-current="page"></a>
-            <img src="images/home.svg" width="12" height="12" alt="домик">
+          <a class="breadcrumbs-link-start"  href="index.html" aria-current="page"></a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
@@ -109,7 +108,7 @@
           </ul>
         </fieldset>
         <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-price">Стоимость Р</legend>
+          <legend class="catalog-filter-title">Стоимость Р</legend>
             <label class="form-label" for="minimum-price">
               <input class="control-input" id="minimum-price" type="text" name="от" placeholder="0">
               <span class="letter">от</span>
@@ -119,15 +118,16 @@
               <span class="letter">до</span>
             </label>
         </fieldset>
-        <button class="button" type="button">применить</button>
-        <button class="button" type="button">сбросить</button>
+        <div class="button-filter">
+          <button class="button" type="button">применить</button>
+          <button class="button" type="button">сбросить</button>
+        </div>
       </form>
     </section>
     <section>
       <div class="select-group">
       <h1 class="visually-hidden">Сортировка</h1>
-      <h2 class="selection">Найдено гостиниц:</h2>
-      <b class="selection">38</b>
+      <h2 class="selection-title">Найдено гостиниц:38</h2>
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвое</option>
         <option value="expensive">Сначала дорогое</option>
@@ -143,7 +143,7 @@
         <span class="visually-hidden">Показать список</span>
       </a>
       </div>
-      
+
       <h1 class="visually-hidden">Catalog</h1>
       <ul class="catalog-list">
         <li class="catalog-card-item">
@@ -236,7 +236,7 @@
     </main>
     <article class="subscription">
       <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-      <p class="subscription-description">Только полезная информация и никакого спама,честное бойскаутское!</p>
+      <p class="subscription-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
       <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="appointment-email" class="visually-hidden">
           Ваш имейл
