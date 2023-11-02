@@ -471,13 +471,14 @@ padding: 96px 70px;
   margin: 0 auto;
   padding: 40px 70px 30px;
   align-items:center;
+  gap: 195px;
 }
 
 .footer-contacts-logo{
   background-image: url("../images/html-academy.svg");
   width: 115px;
   height: 33px;
-  
+
 }
 
 .social-list{
