@@ -15,13 +15,13 @@
           <img src="images/logo.svg" width="140" height="70" alt="логотип">
         </a>
         <ul class="navigation-list navigation-list-main">
-          <li class="navigation-item">
+          <li class="navigation-item ">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-page">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
@@ -49,7 +49,7 @@
             </a>
           </li>
         </ul>
-          <a class="button button-all header-button" href="#">Хочу сюда</a>
+          <a class="button button-all header-button button-brown-color" href="#">Хочу сюда</a>
       </nav>
     </header>
     <main class="main-container main-inner">
@@ -64,7 +64,6 @@
               <path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" /></svg>
           </a>
         </li>
-          <svg class="breadcrumbs-arrow" xmlns="http://www.w3.org/2000/svg" width="8" height="11" fill="none"><path fill="#fff" d="M6.915 4.969 2.165.719c-.25-.25-.75-.25-1.125 0s-.25.75 0 1l4.125 3.75-4 3.75c-.25.25-.25.75 0 1 0 .125.375.25.5.25s.375-.125.5-.25l4.75-4.25a.585.585 0 0 0 0-1Z" /></svg>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
         </li>
@@ -126,6 +125,7 @@
         </fieldset>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+          <div class="filter-price">
             <label class="form-label" for="minimum-price">
               <input class="control-price" id="minimum-price" type="text" name="от" placeholder="0">
               <span class="letter">от</span>
@@ -134,9 +134,10 @@
               <input class="control-price" id="fixed-price" type="text" name="до" placeholder="9000">
               <span class="letter">до</span>
             </label>
+            </div>
         </fieldset>
         <div class="button-filter">
-          <button class="button button-apply" type="button">применить</button>
+          <button class="button button-apply button-blue-color" type="button">применить</button>
           <button class="button button-reset" type="button">сбросить</button>
         </div>
       </form>
@@ -174,8 +175,8 @@
           </a>
             <span class="catalog-card">Гостиница</span>
             <b class="catalog-card-price">От 4000 ₽</b>
-          <a class="catalog-card-button catalog-button" href="#">Подробнее</a>
-          <a class="catalog-card-button button" href="#">В избранное</a>
+          <a class="catalog-card-button catalog-button button-brown-color" href="#">Подробнее</a>
+          <a class="catalog-card-button button button-blue-color" href="#">В избранное</a>
           <div class="star star-4" role="img" aria-label="4-star"></div>
           <div class="hotel-rating">
           <span class="catalog-card">Рейтинг:</span>
@@ -191,7 +192,7 @@
           </a>
           <span class="catalog-card">Гостиница</span>
           <b class="catalog-card-price">От 5000 ₽</b>
-          <a class="catalog-card-button catalog-button" href="#">Подробнее</a>
+          <a class="catalog-card-button catalog-button button-brown-color" href="#">Подробнее</a>
           <a class="catalog-card-button card-button" href="#">В избранном</a>
           <div class="star star-4" role="img" aria-label="4-star"></div>
           <div class="hotel-rating">
@@ -208,8 +209,8 @@
           </a>
           <span class="catalog-card">Гостиница</span>
           <b class="catalog-card-price">От 2500 ₽</b>
-          <a class="catalog-card-button catalog-button" href="#">Подробнее</a>
-          <a class="catalog-card-button button" href="#">В избранное</a>
+          <a class="catalog-card-button catalog-button button-brown-color" href="#">Подробнее</a>
+          <a class="catalog-card-button button button-blue-color" href="#">В избранное</a>
           <div class="star star-3" role="img" aria-label="3-star"></div>
           <div class="hotel-rating">
           <span class="catalog-card">Рейтинг:</span>
@@ -225,8 +226,8 @@
           </a>
           <span class="catalog-card">Гостиница</span>
           <b class="catalog-card-price">От 1500 ₽</b>
-          <a class="catalog-card-button catalog-button" href="#">Подробнее</a>
-          <a class="catalog-card-button button" href="#">В избранное</a>
+          <a class="catalog-card-button catalog-button button-brown-color" href="#">Подробнее</a>
+          <a class="catalog-card-button button button-blue-color" href="#">В избранное</a>
           <div class="star star-2" role="img" aria-label="2-star"></div>
           <div class="hotel-rating">
           <span class="catalog-card">Рейтинг:</span>
@@ -269,7 +270,7 @@
           Ваш имейл
         </label>
         <input class="field" type="text" id="appointment-email" name="appointment-email" placeholder="Ваш e-mail" required="required">
-        <button class="button button-field" type="submit">Подписаться</button>
+        <button class="button button-field button-blue-color" type="submit">Подписаться</button>
       </form>
     </article>
     </div>
