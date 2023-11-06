@@ -149,6 +149,18 @@ body {
   padding: 22px 12px;
 }
 
+.navigation-link-user:hover {
+  opacity: 75%;
+}
+
+.navigation-link-user:focus {
+  outline: 2px solid #756156;
+}
+
+.navigation-link-user:active {
+color: #000;
+}
+
 .navigation-logo {
   position: absolute;
   z-index: 1;
@@ -160,7 +172,7 @@ body {
 }
 
 .navigation-logo:focus {
-border: 2px solid #756257;
+  outline: 2px solid #83b3d3;
 }
 
 .navigation-link {
@@ -178,7 +190,7 @@ border: 2px solid #756257;
 }
 
 .navigation-link:focus {
-  border: 2px solid #756257;
+  outline: 2px solid #756257;
 }
 
 .navigation-link:active {
@@ -384,7 +396,7 @@ border: 2px solid #756257;
 }
 
 .offers-title-housing::before {
-  content:url("../images/icons-haus.svg");
+  content:url("../images/icons-house.svg");
   margin-bottom: 30px;
 
 }
@@ -522,7 +534,7 @@ padding: 96px 70px;
 .page-footer {
   width: 1200px;
   display: grid;
-  grid-template-columns: 1fr 331px 1fr;
+  grid-template-columns: 1fr 350px 1fr;
   justify-content: space-between;
   margin: 0 auto;
   padding: 40px 70px 30px;
@@ -576,6 +588,24 @@ padding: 96px 70px;
   line-height: 40px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.footer-partners {
+  display: flex;
+  justify-content: end;
+  align-items:center;
+}
+
+.logo-partners:hover path {
+  fill: #756157;
+}
+
+.logo-partners:focus {
+  outline: 2px solid #756157;
+}
+
+.logo-partners:active path {
+  fill: rgba(117, 97, 87, 0.30);
 }
 
 .main-inner{
@@ -737,12 +767,12 @@ padding: 96px 70px;
   font-family: "pt sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  border:0;
+  border: 0;
   padding: 8px 50px;
   margin-bottom: 32px;
 }
 
-.button-reset{
+.button-reset {
   font-family: "pt sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -751,14 +781,14 @@ padding: 96px 70px;
   padding: 8px 50px;
 }
 
-.select-group{
+.select-group {
   display: flex;
   justify-content: flex-end;
-  align-items:center;
+  align-items: center;
   padding: 50px 70px 40px;
 }
 
-.selection-title{
+.selection-title {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -768,8 +798,8 @@ padding: 96px 70px;
   margin-right: auto;
 }
 
-.select-control{
-  font:inherit;
+.select-control {
+  font: inherit;
   color: #333333;
   margin: 0;
   padding: 14px 20px;
@@ -781,25 +811,25 @@ padding: 96px 70px;
   border-radius:4px;
 }
 
-.button-light{
+.button-light {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   padding: 12px 14px;
   min-width: 48px;
   min-height: 48px;
-  background-color:#ffffff;
-  border:2px solid #f5f5f5;
+  background-color: #ffffff;
+  border: 2px solid #f5f5f5;
   margin-left: 8px;
 }
 
-.button-grid{
-  border:2px solid #000000;
+.button-grid {
+  border: 2px solid #000000;
   margin-left: 70px;
 }
 
-.catalog-list{
+.catalog-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -809,10 +839,10 @@ padding: 96px 70px;
   position: relative;
 }
 
-.catalog-card-item{
+.catalog-card-item {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  grid-template-rows:212px 1fr;
+  grid-template-rows: 212px 1fr;
   gap: 16px 20px;
   padding: 20px;
   background-color: #ffffff;
@@ -821,17 +851,17 @@ padding: 96px 70px;
   width: 340px;
 }
 
-.catalog-card-link{
+.catalog-card-link {
   grid-column: 1 / -1;
   object-fit: cover;
 }
 
-.catalog-card-title{
+.catalog-card-title {
   grid-column: 1 / -1;
   text-decoration: none;
 }
 
-.card-title{
+.card-title {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -840,11 +870,11 @@ padding: 96px 70px;
   color:#000000
 }
 
-.catalog-card-price{
+.catalog-card-price {
   text-align: right;
 }
 
-.catalog-card-button{
+.catalog-card-button {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -852,59 +882,72 @@ padding: 96px 70px;
   text-transform: uppercase;
   min-width: 140px;
   padding: 8px;
-  text-align:center;
+  text-align: center;
   justify-items: center;
 }
 
-.catalog-button{
-  background-color:#756157;
+.catalog-button {
+  background-color: #756157;
   color: #ffffff;
-  border-radius:4px;
+  border-radius: 4px;
   text-decoration: none;
 }
 
-.card-button{
-  background-color:#7db54f;
+.card-button {
+  background-color: #7db54f;
   color: #ffffff;
-  border-radius:4px;
+  border-radius: 4px;
   text-decoration: none;
 }
 
-.hotel-rating{
+.button-green-color:hover {
+  background-color: #6c9e42;
+}
+
+.button-green-color:focus {
+  outline: 2px solid #6c9e42;
+}
+
+.button-green-color:active {
+  background-color: #7db54f;
+  color: rgba(225, 225, 225, 0.30);
+}
+
+.hotel-rating {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  background-color:#f2f2f2;
+  background-color: #f2f2f2;
   padding: 9px 21px 8px 21px;
   border-radius: 4px;
 }
 
-.star{
+.star {
   height: 37px;
   width: 140px;
   padding: 10px 0;
 }
 
-.star::before{
+.star::before {
   content: "";
   display: block;
   height: 17px;
-  background-image:url("../images/icons-star.svg");
+  background-image: url("../images/icons-star.svg");
   background-repeat: space no-repeat;
   background-size: contain;
 }
 
-.star-4::before{
+.star-4::before {
   width: 85px;
 }
 
-.star-3::before{
+.star-3::before {
   width: 65px;
 }
 
-.star-2::before{
+.star-2::before {
   width: 40px;
 }
 
@@ -918,8 +961,8 @@ padding: 96px 70px;
   right: 70px;
 }
 
-.pagination-item{
-  background-color:#82b3d3;
+.pagination-item {
+  background-color: #82b3d3;
   border-radius: 4px;
   min-width: 60px;
   height: 60px;
@@ -928,7 +971,7 @@ padding: 96px 70px;
   padding: 12px 10px;
 }
 
-.pagination-title{
+.pagination-title {
   display: flex;
   flex-wrap: wrap;
   padding: 0 70px 60px;
@@ -936,7 +979,7 @@ padding: 96px 70px;
   margin: 0;
 }
 
-.pagination-link{
+.pagination-link {
   color: #ffffff;
   font-size: 20px;
   font-style: normal;
@@ -946,8 +989,8 @@ padding: 96px 70px;
   text-decoration: none;
 }
 
-.pagination-item-current{
-  background-color:#ffffff;
+.pagination-item-current {
+  background-color: #ffffff;
   border-radius: 4px;
   border: 1px solid #e6e6e6;
   min-width: 60px;
@@ -956,14 +999,14 @@ padding: 96px 70px;
   padding: 12px 0;
 }
 
-.pagination-current{
+.pagination-current {
   color: #333333;
 }
 
-.pagination-next{
+.pagination-next {
   color: #333333;
 }
 
-.pagination-item-next{
+.pagination-item-next {
   background-color:#ffffff
 }
