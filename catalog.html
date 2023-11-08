@@ -46,6 +46,11 @@
               <span class="visually-hidden">
                 Избранное
               </span>
+              <div class="popover">
+                <button class="popover-button">
+                  <span>12</span>
+                </button>
+              </div>
             </a>
           </li>
         </ul>
@@ -59,7 +64,7 @@
       <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link-start"  href="index.html" aria-current="page">
-            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 13 13">
               <path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
               <path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" /></svg>
           </a>
@@ -71,7 +76,8 @@
       </div>
       <h2 class="visually-hidden">выбор гостиницы</h2>
       <form class="catalog-filter" action="https://exo.htmlacademy.ru">
-        <fieldset class="catalog-filter-group">
+        <div class="filter-group">
+          <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
@@ -96,50 +102,65 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="catalog-filter-group">
+          </fieldset>
+          <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Тип жилья:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control option">
-              <input class="control-input" type="radio" name="гостиница" checked>
+              <input class="control-input" type="radio" name="motel" checked>
               <span class="control-option-radio"></span>
                 Гостиница
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control option">
-              <input class="control-input" type="radio" name="мотель" >
+              <input class="control-input" type="radio" name="motel">
               <span class="control-option-radio"></span>
                 Мотель
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control option">
-              <input class="control-input" type="radio" name="апартаменты" >
+              <input class="control-input" type="radio" name="motel">
               <span class="control-option-radio"></span>
                 Апартаменты
               </label>
             </li>
           </ul>
-        </fieldset>
+          </fieldset>
+        </div>
+        <div class="filter-group">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
           <div class="filter-price">
             <label class="form-label" for="minimum-price">
-              <input class="control-price" id="minimum-price" type="text" name="от" placeholder="0">
-              <span class="letter">от</span>
+              <input class="control-price control-price-left" id="minimum-price" type="text" name="от" placeholder="0">
+              <span class=" letter letter-left">от</span>
             </label>
             <label class="form-label" for="fixed-price">
-              <input class="control-price" id="fixed-price" type="text" name="до" placeholder="9000">
-              <span class="letter">до</span>
+              <input class="control-price control-price-right" id="fixed-price" type="text" name="до" placeholder="9000">
+              <span class="letter letter-right">до</span>
             </label>
             </div>
+            <div class="range">
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0; width: 226px">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">От</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">До</span>
+                  </button>
+                </div>
+              </div>
+              </div>
         </fieldset>
         <div class="button-filter">
           <button class="button button-apply button-blue-color" type="button">применить</button>
           <button class="button button-reset" type="button">сбросить</button>
         </div>
+      </div>
       </form>
     </section>
     <section>
@@ -238,7 +259,7 @@
         <footer>
           <h1 class="visually-hidden">pagination </h1>
           <ol class="pagination-title">
-            <li class="pagination-item-current pagination-item">
+            <li class="pagination-item-current">
               <a class="pagination-link pagination-current">1</a>
             </li>
             <li class="pagination-item">
@@ -250,7 +271,7 @@
             <li class="pagination-item">
               <a class="pagination-link" href="#">4</a>
             </li>
-            <li class="pagination-item pagination-item-next">
+            <li class="pagination-item-next">
               <a class="pagination-link pagination-next" href="#">
                 <span class="pagination">...</span>
               </a>
