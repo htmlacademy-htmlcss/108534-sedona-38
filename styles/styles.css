@@ -785,15 +785,41 @@ padding: 96px 70px;
   left: 0;
 }
 
+.control:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.control:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .control-option:hover {
-  color: rgba(225, 225, 225, 0.3);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-option-radio:hover {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .control-option:focus {
-  border-radius: 4px;
   outline: 3px solid #83b3d3;
 }
 
+.control-option-radio:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.control-option:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-option-radio:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
 .control-input:checked + .control-option{
   background-image: url("../images/tick.svg");
@@ -817,6 +843,24 @@ padding: 96px 70px;
 .filter-price {
   display:flex;
   margin-bottom: 42px;
+}
+
+.control-price-left:hover {
+  background: #e6e6e6;
+  border-radius: 4px 0 0 4px;
+}
+
+.control-price-right:hover {
+  background: #e6e6e6;
+  border-radius: 0 4px 4px 0;
+}
+
+.control-price-left:focus-visible {
+  outline: 2px solid #83b3d3;
+}
+
+.control-price-right:focus-visible {
+  outline: 2px solid #83b3d3;
 }
 
 .form-label{
