@@ -186,8 +186,9 @@ color: #000;
   font-style: normal;
   font-weight: 400;
   line-height: 10px;
-  bottom: 10px;
-  left: 8px;
+  top: 12px;
+  margin-left: 8px;
+
 }
 
 .navigation-logo {
@@ -1035,8 +1036,6 @@ padding: 96px 70px;
   padding-right: 30px;
 }
 
-
-
 .select-control:hover {
   border-radius: 4px;
   border: 2px solid #68a2ca;
@@ -1125,7 +1124,7 @@ padding: 96px 70px;
   font-weight: 700;
   line-height: 28px;
   margin: 0;
-  color:#000000
+  color:#000000;
 }
 
 .catalog-card-price {
