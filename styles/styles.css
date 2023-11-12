@@ -255,6 +255,8 @@ color: #000;
 .hero-image {
   display: block;
   margin: 0 auto;
+  width: 458px;
+  min-height: 352px;
 }
 
 .advantages-causes {
@@ -285,6 +287,8 @@ color: #000;
 
 .advantages-photo {
   object-fit: cover;
+  width: 800px;
+  min-height: 385px;
 }
 
 .advantages-list {
@@ -295,7 +299,6 @@ color: #000;
 
 .advantages-item {
   text-align: center;
-  background-color: #82b3d3;
 }
 
 .advantages-nested:nth-child(odd) {
@@ -308,6 +311,7 @@ color: #000;
 
 .advantages-item-page {
   display: flex;
+  background-color: #82b3d3;
 }
 
 .advantages-page {
@@ -481,7 +485,7 @@ padding: 95px 70px;
 }
 
 .subscription {
-  padding: 96px 258px 104px;
+  padding: 96px 70px 104px;
   text-align: center;
 }
 
@@ -1009,6 +1013,7 @@ padding: 95px 70px;
 
 .select-group {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
   padding: 50px 70px 40px;
@@ -1022,6 +1027,8 @@ padding: 95px 70px;
   text-transform: uppercase;
   margin: 0;
   margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .select-control {
@@ -1059,16 +1066,14 @@ padding: 95px 70px;
 }
 
 .button-light {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 12px 14px;
   min-width: 48px;
   min-height: 48px;
   background-color: #ffffff;
   border: 2px solid #f5f5f5;
   margin-left: 8px;
+  display: block;
+  align-items:center;
 }
 
 .button-light:hover {
@@ -1089,6 +1094,27 @@ padding: 95px 70px;
 .button-grid {
   border: 2px solid #000000;
   margin-left: 70px;
+}
+
+.button-grid {
+  background-image: url("../images/icons-views.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 16px;
+  height: 14px;
+}
+
+.button-light-tape {
+  background-image: url("../images/icons-window.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-list {
+  background-image: url("../images/icons-list.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catalog-list {
@@ -1115,12 +1141,33 @@ padding: 95px 70px;
 
 .catalog-card-link {
   grid-column: 1 / -1;
+}
+
+.catalog-card-image {
+  width: 300px;
+  min-height: 212px;
   object-fit: cover;
+}
+
+.catalog-card-link:hover {
+  opacity: 0.8;
+}
+
+.catalog-card-link:active {
+  opacity: 0.6;
 }
 
 .catalog-card-title {
   grid-column: 1 / -1;
   text-decoration: none;
+}
+
+.catalog-card-title:hover {
+  opacity: 0.8;
+}
+
+.catalog-card-title:active {
+  opacity: 0.6;
 }
 
 .card-title {
