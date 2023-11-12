@@ -5,6 +5,7 @@
   src: url(../fonts/pt-sans-400.woff2) format("woff2");
   font-display: swap;
 }
+
 @font-face {
   font-family:"pt sans";
   font-style: normal;
@@ -48,7 +49,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 0  15px 0  rgba(0, 0, 0, 0.20);
+  box-shadow: 0 15px 15px 0  rgba(0, 0, 0, 0.20);
 }
 
 .content {
@@ -69,13 +70,10 @@ body {
 }
 
 .header-button {
-  color: #ffffff;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
   background-color: #756157;
   padding: 8px;
   min-width: 160px;
@@ -147,7 +145,6 @@ body {
 
 .navigation-user {
   margin-left: auto;
-  justify-content: center;
 }
 
 .navigation-link-user {
@@ -281,7 +278,6 @@ color: #000;
   line-height: 26px;
   text-align: center;
   color: #333333;
-  background-color: #ffffff;
   margin: 0;
 }
 
@@ -331,9 +327,7 @@ color: #000;
 .advantages-nested {
   width: 400px;
   min-height: 385px;
-  padding: 113px 85px;
-  margin-top: auto;
-  margin-bottom: auto;
+  padding: 112px 80px;
 }
 
 .advantages-title-nested {
@@ -623,7 +617,7 @@ padding: 95px 70px;
 
 .footer-contacts {
   display: flex;
-  width: 331px;
+  width: 350px;
   align-items: center;
 }
 
@@ -650,9 +644,7 @@ padding: 95px 70px;
 }
 
 .footer-partners {
-  display: flex;
-  justify-content: end;
-  align-items:center;
+  text-align: right;
 }
 
 .logo-partners:hover path {
