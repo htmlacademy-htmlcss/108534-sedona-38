@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="page-container content">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-logo"  href="index.html" aria-current="page">
           <img src="images/logo.svg" width="140" height="70" alt="логотип">
@@ -57,8 +57,8 @@
           <a class="button button-all header-button button-brown-color" href="#">Хочу сюда</a>
       </nav>
     </header>
-    <main class="main-container main-inner">
-    <section class="catalog-products">
+    <main class="main-container main-inner" data-test="main">
+    <section class="catalog-products" >
       <div>
       <h1 class="catalog-title">Гостиницы Седоны </h1>
       <ol class="breadcrumbs">
@@ -75,7 +75,7 @@
       </ol>
       </div>
       <h2 class="visually-hidden">выбор гостиницы</h2>
-      <form class="catalog-filter" action="https://exo.htmlacademy.ru">
+      <form class="catalog-filter" action="https://exo.htmlacademy.ru" data-test="filter">
         <div class="filter-group">
           <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -163,7 +163,7 @@
       </div>
       </form>
     </section>
-    <section>
+    <section class="catalog" data-test="catalog">
       <div class="select-group">
       <h1 class="visually-hidden">Сортировка</h1>
       <h2 class="selection-title">Найдено гостиниц: 38</h2>
@@ -280,7 +280,7 @@
         </footer>
     </section>
     </main>
-    <article class="subscription">
+    <article class="subscription" data-test="subscribe">
       <h2 class="subscription-title">Подпишитесь на рассылку</h2>
       <p class="subscription-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
       <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -293,7 +293,7 @@
     </article>
     </div>
     <div class="page-container">
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <section class="footer-social">
         <h2 class="visually-hidden">Соцсети</h2>
         <ul class="social-list">
