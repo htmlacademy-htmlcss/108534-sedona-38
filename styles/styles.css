@@ -1439,8 +1439,33 @@ padding: 95px 70px;
   flex-wrap: wrap;
 }
 
-.calendar-date {
-  position: relative;
+
+.calendar-arrival::after {
+  content:"";
+  background-image: url("../images/icons-data.svg");
+  opacity: 0.3;
+  display: block;
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 21px;
+  margin-top: 14px;
+}
+
+.calendar-departure::after {
+  content: "";
+  background-image: url("../images/icons-data.svg");
+  opacity: 0.3;
+  display: block;
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 21px;
+  margin-top: 14px;
 }
 
 .modal-form-select {
@@ -1472,6 +1497,15 @@ padding: 95px 70px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+}
+
+.calendar-date {
+  position: relative;
+}
+
+.calendar:hover {
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #e6e6e6;
 }
 
 .modal-description {
@@ -1530,16 +1564,16 @@ padding: 95px 70px;
 .counter {
   border: none;
   background-color: #f2f2f2;
-  border-radius: 4px;
-  display: flex;
+  display: block;
   align-items: center;
-  padding: 14px 34px;
-  width: 110px;
+  padding: 14px 10px;
+  min-width: 31px;
   text-align: center;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
+  flex-basis: 31px;
 }
 
 .tooltip {
@@ -1571,7 +1605,7 @@ padding: 95px 70px;
   width: 256px;
   min-height: 143px;
   padding: 19px 18px 18px 22px;
-  border-radius:10px;
+  border-radius: 10px;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
   position: absolute;
   left: 50%;
@@ -1586,7 +1620,7 @@ padding: 95px 70px;
   display: block;
   width: 19px;
   height: 9px;
-  color:#7db54f;
+  color: #7db54f;
   position: absolute;
   top: -9px;
   transform: translateX(95px);
@@ -1594,54 +1628,30 @@ padding: 95px 70px;
 
 .counter-children {
   display: flex;
-  align-items:center;
-  position: relative;
-  margin-left: 46px;
-}
-
-.counter-children::before {
-  content:"";
-  background-image: url("../images/icons-minus.svg");
-  display: block;
-  width: 14px;
-  height: 2px;
-  position: absolute;
-  left: 12px;
-}
-
-.counter-children::after {
-  content: "";
-  background-image: url("../images/icons-plus.svg");
-  display: block;
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  right: 12px;
+  justify-content: end;
+  align-items: center;
 }
 
 .counter-adults {
   display: flex;
   align-items: center;
-  position: relative;
   margin-left: 46px;
 }
 
-.counter-adults::before {
-  content: "";
-  background-image: url("../images/icons-minus.svg");
+.button-minus {
+  border: none;
   display: block;
-  width: 14px;
-  height: 2px;
-  position: absolute;
-  left: 12px;
+  width: 40px;
+  height: 48px;
+  padding: 14px 10px;
+  margin: 0;
 }
 
-.counter-adults::after {
-  content: "";
-  background-image: url("../images/icons-plus.svg");
+.button-plus {
+  border: none;
   display: block;
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  right: 12px;
+  width: 40px;
+  height: 48px;
+  padding: 14px 10px;
+  margin: 0;
 }
